@@ -194,7 +194,27 @@ html {
 
 /*end-of-news*/
 /*other-sites*/
+.other-sites{
+    display: flex;
+    flex-direction: column;
+    padding:1rem;
+    background-color: #d2cccc;
+}
+.other-sites h2{
+    color:rgb(3, 3, 54);
+    margin-bottom:5px;
+}
 
+.other-sites .sites {
+    display:flex;
+    flex-direction: column;
+}
+.other-sites .sites a{
+    text-decoration:none;
+    color:rgb(22, 22, 90);
+    font-size:15px;
+    margin-block:5px;
+}
 /*end-other-sites*/
 /*static*/
 .statics{
