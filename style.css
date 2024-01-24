@@ -216,6 +216,19 @@ html {
     margin-block:5px;
 }
 /*end-other-sites*/
+
+/*Agencies-section*/
+.agencies .badges{
+    display:flex;
+    gap:5rem;
+    justify-content:center;
+    flex-wrap: wrap;
+}
+.agencies .badges .agencies-imgs{
+    flex:1;
+    
+}
+/*end-of-Agencies*/
 /*static*/
 .statics{
     display: flex;
