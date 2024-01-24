@@ -1,11 +1,15 @@
 html {
 	font-family: 'Open Sans', sans-serif;
 }
+body{
+    padding:0;
+    margin:0;
+}
 
 .container {
     display:flex;
     flex-direction: column;
-    border:2px solid red;
+    /*border:2px solid red;*/
     justify-content: center;
 }
 .container >*{
@@ -261,6 +265,22 @@ html {
 
 }
 /*end-more-section*/
+/*footer-section*/
+.footer{
+    background-image: url('./images/img_nature_wide.jpg');
+    /*padding-inline:1rem;*/
+    color: #fff;
+    height: fit-content;
+}
+.footer .footer-text{
+    margin-top:25%;
+    padding-inline:1rem;
+    padding-top:0.2rem;
+    padding-bottom:10%;
+    background-color: aqua;
+}
+
+/*end-footer-section*/
 /*static*/
 .statics{
     display: flex;
