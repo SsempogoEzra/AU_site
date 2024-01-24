@@ -218,6 +218,9 @@ html {
 /*end-other-sites*/
 
 /*Agencies-section*/
+.agencies{
+    margin:1rem;
+}
 .agencies .badges{
     display:flex;
     gap:5rem;
@@ -229,6 +232,35 @@ html {
     
 }
 /*end-of-Agencies*/
+
+/*contuct-us*/
+/*end-contact-us*/
+
+/*more-section*/
+.more{
+    background-color: #d2cccc;
+    display: flex;
+    flex-direction: column;
+    column-gap:-1rem;
+
+}
+
+.more .mores{
+    margin-inline:1rem;
+
+}
+.more .mores h2{
+    color:rgb(22, 22, 90);
+    margin-bottom:-1%;
+}
+.more .mores li{
+    margin-block:5px;
+    margin-left:-2.5rem;
+    list-style:none;
+    color:rgb(68, 68, 108);
+
+}
+/*end-more-section*/
 /*static*/
 .statics{
     display: flex;
