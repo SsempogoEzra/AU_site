@@ -56,12 +56,12 @@ html {
 }
 .header_2 div{
     flex-wrap:nowrap;
-    width:fit-content;
+    max-width:inherit;
 }
-
-.header_2 div a{
+.header_2 div a p{
     font-size:80%;
-    color:rgb(146, 146, 207)
+    color:rgb(68, 68, 108);
+    white-space:nowrap;
 }
 /*end-header_2*/
 /*hero section*/
@@ -73,7 +73,9 @@ html {
     align-items: center;
 }
 .hero {
-    background-color:rgba(196, 196, 212, 0.926);
+    background-image:url('./images/Cyber-Tile.jpg');
+    background-size:cover;
+    background-position:center;
 }
 .hero .hero_txt{
     display:flex;
@@ -101,12 +103,23 @@ html {
     padding-left:2rem;
 }
 /*end_hero_section*/
-
+.hero{position:relative;
+    z-index:1;
+}
 /*topics-section*/
 .topics{
+    position:absolute;
+    top:55%;
+    left:2%;
+    right:2%;
+    z-index:2;
+    height:80%;
+    background-color:rgba(0, 0 , 0 ,0);
     padding:1rem;
 }
-
+#topics-heading{
+    color:white;
+}
 .topics .topic-info{
     color:rgb(22, 22, 90);
     border-bottom:2px solid yellow;
@@ -122,8 +135,126 @@ html {
 /*info*/
 .info-content{
     background-color: aliceblue;
-    border-bottom:2px solid rgb(3, 137, 92);
+    border-bottom:3px solid rgb(3, 137, 92);
     margin:1rem;
+    font-size:100%;
     padding:1rem;
+    color:rgb(3, 3, 54);
+}
+.info-logos{
+    display: flex;
+    justify-content: space-between;
+    font-size:20px;
+}
+#arrow{
+    font-size:30px;
+    font-weight:bold;
 }
 /*end-of-info*/
+/*news-section*/
+.news{
+    display: flex;
+    flex-direction: column;
+    column-gap:1rem;
+    padding:1rem;
+ }
+.news .news-section{
+    padding:5px;
+}
+.news-section a{
+    color:rgb(3, 3, 54);
+    text-decoration:none;
+    font-size:15px;
+
+}
+.news-section .subtitle{
+    color: black;
+    font-size:18px;
+    font-weight:bold;
+}
+.sub{
+    margin-right:1rem;
+}
+.news-section .subtitle  .news-date{
+    font-size:15px;
+    color: #a6a6a6;
+    font-weight:normal;
+}
+.news .news-section .read-mores{
+    margin-left:75%;
+    font-size:80%;
+    color:rgb(22, 22, 90);
+}
+.see-all{
+    margin-left:45%;
+    color:rgb(22, 22, 90);
+    font-size:24px;
+    white-space:nowrap;
+}
+
+/*end-of-news*/
+/*other-sites*/
+
+/*end-other-sites*/
+/*static*/
+.statics{
+    display: flex;
+    gap:1%;
+    justify-content:center;
+    position:fixed;
+    height:min-content;
+    left:50%;
+    transform: translate(-50%);
+    bottom:0;
+    max-width:fit-content;
+    padding-bottom: 0;
+    margin-bottom:0;
+    z-index:2;
+  }
+  
+  .qns{
+    display:flex;
+    max-width:inherit;
+  }
+  .qns p{
+    font-size:100%;
+    background-color: rgb(106, 210, 175);
+    padding-top:2px;
+    padding-bottom:2px;
+    font-weight: bold;
+    border-radius:2px;
+    padding-inline:3px;
+    white-space:nowrap;
+    align-self: center;
+  }
+  .feedback{
+    display:flex;
+    max-width:inherit;
+  }
+  .feedback p{
+    font-size:100%;
+    background-color:#717171;
+    padding-top:3px;
+    padding-bottom:3px;
+    font-weight: bold;
+    padding-inline:3px;
+    white-space:nowrap;
+    align-self: center;
+  }
+  .feed2{
+    background-color: #717171;
+    font-size:100%;
+  }
+  .logo-qns{
+    padding-inline:5px;
+    background-color: rgb(181, 243, 243);
+  }
+  #logo-feed{
+    padding-block:1%;
+    background-color:#a6a6a6;  
+  }
+  .feed ,.qns{
+    flex:1;
+    align-items: flex-end;
+  }
+/*end-statics*/
