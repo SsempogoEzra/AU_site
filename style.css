@@ -21,7 +21,7 @@ body{
     display :flex;
     height:fit-content;
     justify-content:space-between;
-    border: 2px solid blue;
+    /*border: 2px solid blue;*/
     gap:2rem;
 }
 
@@ -40,6 +40,9 @@ body{
 .header-btn{
     height:40px;
     width:40px;    
+    font-size: larger;
+    background-color: #122534;
+    border-radius:3px;
 }
 #logo{
     height:40px;
@@ -141,6 +144,8 @@ body{
     border-bottom:2px solid yellow;
     background-color:rgb(244, 244, 213);
     padding:1rem;
+    border-radius:3px;
+    margin-block:5px;
 }
 /*end-of-topics*/
 
