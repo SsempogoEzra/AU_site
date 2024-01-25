@@ -1,5 +1,5 @@
 html {
-	font-family: 'Open Sans', sans-serif;
+	font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 body{
     padding:0;
@@ -9,7 +9,6 @@ body{
 .container {
     display:flex;
     flex-direction: column;
-    /*border:2px solid red;*/
     justify-content: center;
 }
 .container >*{
@@ -31,9 +30,8 @@ body{
 }
 
 #menu-btn{
-    max-width:30px;
+    max-width:40px;
     height:40px;
-    border:2px solid rgb(158, 105, 105);
     border-radius:3px;
     margin-left:0.5rem;
 }
@@ -127,30 +125,61 @@ body{
 }
 /*topics-section*/
 .topics{
-    position:absolute;
-    top:55%;
+    /*position:absolute;*/
+    /*top:55%;
     left:2%;
     right:2%;
     z-index:2;
-    height:80%;
+    height:80%;*/
     background-color:rgba(0, 0 , 0 ,0);
     padding:1rem;
 }
 #topics-heading{
-    color:white;
+    color:black;
 }
 .topics .topic-info{
     color:rgb(22, 22, 90);
     border-bottom:2px solid yellow;
     background-color:rgb(244, 244, 213);
     padding:1rem;
-    border-radius:3px;
+    border-radius:5px;
     margin-block:5px;
 }
 /*end-of-topics*/
 
 /*portfolio*/
+.portfolio{
+    margin-inline:1rem;
+    display:flex;
+    flex-direction: column;
+}
+.portfolio .images-hold{
+    display: flex;
+    justify-content:space-around;
+    gap:3rem;
+    flex-wrap: wrap;
+}
+.portfolio .images-hold .portfolio-images{
+    flex:1;
+    max-width:40%;
+}
+ .images-hold img:hover{
+    filter: brightness(50%);
+    
+}
+.portfolio .images-hold  img {
+    border-radius:10px;
+    flex:1;
+    border:2px solid #3B5998;
+    width:100%;
+    max-height:60%;
+}
 
+.portfolio .images-hold  p{
+    max-width:inherit;
+    font-weight:bold;
+    text-align: center;
+}
 /*end-of-portfolio*/
 
 /*info*/
@@ -219,7 +248,7 @@ body{
     display: flex;
     flex-direction: column;
     padding:1rem;
-    background-color: #d2cccc;
+    background-color:aliceblue;
 }
 .other-sites h2{
     color:rgb(3, 3, 54);
@@ -252,6 +281,13 @@ body{
     flex:1;
     
 }
+
+/*@media (max-width: 600px) {
+	.agencies-imgs {
+		max-width:10%;
+        border:2px solid red;
+	}
+}*/
 /*end-of-Agencies*/
 
 /*contuct-us*/
@@ -274,15 +310,17 @@ body{
     border:1px solid rgb(22, 22, 90);
     border-radius:2px;
     font-size:90%;
+    white-space:nowrap;
+    width: fit-content;
     padding-inline:2rem;
-    padding-block:2rem;
+    padding-block:1rem;
 }
 
 .fa{
     padding: 20px;
     font-size: 30px;
-    width:40px;
-    height:40px;
+    width:30px;
+    height:30px;
     align-self:center;
     text-decoration:none;
     border-radius:50%;
@@ -305,7 +343,7 @@ body{
 
 /*more-section*/
 .more{
-    background-color: #d2cccc;
+    background-color:aliceblue;
     display: flex;
     flex-direction: column;
     column-gap:-1rem;
@@ -351,7 +389,7 @@ body{
     padding-inline:1rem;
     padding-top:0.2rem;
     padding-bottom:10%;
-    background-color: aqua;
+    background-color:#122534;
 }
 
 /*end-footer-section*/
