@@ -37,7 +37,8 @@ body{
 }
 .header-btn{
     height:40px;
-    width:40px;    
+    width:40px;
+    color:white;    
     font-size: larger;
     background-color: #122534;
     border-radius:3px;
@@ -62,7 +63,7 @@ body{
     margin-inline:1rem;
 }
 .header_2 div{
-    flex-wrap:nowrap;
+    flex-wrap:wrap;
     max-width:inherit;
 }
 .header_2 div a p{
@@ -156,8 +157,9 @@ body{
 .portfolio .images-hold{
     display: flex;
     justify-content:space-around;
-    gap:3rem;
+    gap:5px;
     flex-wrap: wrap;
+    /*margin-bottom:5px;*/
 }
 .portfolio .images-hold .portfolio-images{
     flex:1;
@@ -179,6 +181,7 @@ body{
     max-width:inherit;
     font-weight:bold;
     text-align: center;
+    margin-bottom:1rem;
 }
 /*end-of-portfolio*/
 
@@ -319,8 +322,8 @@ body{
 .fa{
     padding: 20px;
     font-size: 30px;
-    width:30px;
-    height:30px;
+    width:20px;
+    height:20px;
     align-self:center;
     text-decoration:none;
     border-radius:50%;
